@@ -1,0 +1,25 @@
+{
+  "usersRepository": [
+    {
+      "id": "111",
+      "name": "John Smith",
+      "email": "jhons@mail.com",
+      "username": "jhon",
+      "password": "7427"
+    },
+    {
+      "id": "222",
+      "name": "Adam Smith",
+      "email": "adam@mail.com",
+      "username": "adam",
+      "password": "4734"
+    },
+    {
+      "id": "333",
+      "name": "James Bond",
+      "email": "jbond@mail.com",
+      "username": "jbond",
+      "password": "7682"
+    }
+  ]
+}

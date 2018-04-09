@@ -1,0 +1,18 @@
+Requirements:
+Every user has its own directory (outside of webapp) : {root.dir}/{username} (ex. ‘c:\file-manager-files\adam’).
+Keep the path to the users’ root directory in a property file (e.g. config.properties, for example root.dir= c:\\file-manager-files\\)
+Each user can see/delete/upload only files from his own directory/
+Home page should contain
+the list of user’s files and links named ‘delete’ and ‘download’ near each file and a checkbox (sorry couldn’t find icon/control for checkbox ☺ )
+Examle:
+my_text_file.txt 		delete	 download
+my_word_doc.docx 		delete	 download
+a button named ‘Add’ for uploading a new file.
+a button named ‘Zip and download’ which creates and downloads a zip file from selected files (checkboxes)
+
+How to implement:
+Create a servlet context listener which reads users.json and creates directories for users who don’t yet have directory in root.dir
+Create DeleteServlet servlet which is responsible for deletion of specified file. It takes ‘fname’ parameter which is the file name which needs to be deleted.
+Create DownloadServlet servlet which is responsible for downloading specified file. It takes ‘fname’ parameter which is the file name which needs to be downloaded.
+Create UploadServlet servlet which is responsible for uploading a file to user’s directory.
+Create DownloadZipServlet servlet which is responsible for downloading selected files as zip. It takes file (more than one) parameters which are selected file names.

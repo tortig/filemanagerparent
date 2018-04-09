@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <welcome-file-list>
+        <welcome-file>hello.html</welcome-file>
+    </welcome-file-list>
+
+    <!--Get User Servlet-->
+    <servlet-mapping>
+        <servlet-name>GetUserServlet</servlet-name>
+        <url-pattern>/get</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetUserServlet</servlet-name>
+        <servlet-class>servlet.GetUserServlet</servlet-class>
+    </servlet>
+
+    <!--Create User servlet-->
+    <servlet-mapping>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateUserServlet</servlet-name>
+        <servlet-class>servlet.CreateUserServlet</servlet-class>
+    </servlet>
+
+    <!--Delete User servlet-->
+    <servlet-mapping>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <servlet-class>servlet.DeleteUserServlet</servlet-class>
+    </servlet>
+
+    <!--Update User servlet-->
+    <servlet-mapping>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <servlet-class>servlet.UpdateUserServlet</servlet-class>
+    </servlet>
+
+    <!--Users JSON read listener-->
+    <listener>
+        <listener-class>listener.UsersListListener</listener-class>
+    </listener>
+
+</web-app>

@@ -1,0 +1,16 @@
+{
+ "users": [
+  {
+   "name": "John Smith",
+   "email": "jhons@mail.com",
+   "username": "jhon",
+   "password_hash": "7a427cd385506e76bdf3138a40ad7097a217682af88ac7a8f3d4ddb69e47349e"
+  },
+  {
+   "name": "Adam Smith",
+   "email": "adam@mail.com",
+   "username": "adam",
+   "password_hash": "7a427cd385506e76bdf3138a40ad7097a217682af88ac7a8f3d4ddb69e47349e"
+  }
+ ]
+}
